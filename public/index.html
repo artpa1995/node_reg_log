@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="css/style.css"> -->
+    <title>home</title>
+</head>
+<body>
+    <h1>home</h1>
+    <nav>
+        <li>
+            <a href="/">home</a>
+        </li>
+        <li>
+            <a href="/contact">contact</a>
+        </li>
+    </nav>
+    <form action="/api/posts/" method="POST" enctype="multipart/form-data" style="
+        border: 3px solid grey;
+        padding: 10px;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        width: 100%;
+        max-width: 600px;
+        margin: 0 auto;
+        height: 250px;
+    ">
+    <h1>Form for posts</h1>
+        <input type="text" name="author" placeholder="author">
+        <input type="text" name="title" placeholder="title">
+        <input type="text" name="content" placeholder="content">
+        <input type="file" name="picture" placeholder="picture">
+        <input type="submit">
+        
+    </form>
+    <form action="/auth/registration/" method="POST" enctype="multipart/form-data" style=" border: 3px solid grey;padding: 10px;box-sizing: border-box;display: flex;flex-direction: column;justify-content: space-evenly;width: 100%;max-width: 600px;margin: 0 auto; margin-top:30px;height: 250px;">
+        <h1>Form for registration</h1>
+        <input type="text" name="username" placeholder="username">
+        <input type="text" name="password" placeholder="password">
+        <input type="submit">
+    </form>
+    <form action="/auth/login/" method="POST" enctype="multipart/form-data" style=" border: 3px solid grey;padding: 10px;box-sizing: border-box;display: flex;flex-direction: column;justify-content: space-evenly;width: 100%;max-width: 600px;margin: 0 auto; margin-top:30px;height: 250px;">
+        <h1>Form for login</h1>
+        <input type="text" name="username" placeholder="username">
+        <input type="text" name="password" placeholder="password">
+        <input type="submit">
+    </form>
+    <script>
+        
+    </script>
+    
+</body>
+</html>
